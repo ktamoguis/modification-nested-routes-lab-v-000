@@ -19,7 +19,7 @@ new_artist_song GET    /artists/:artist_id/songs/new(.:format) songs#new
                 PATCH  /songs/:id(.:format)                    songs#update
                 PUT    /songs/:id(.:format)                    songs#update
                 DELETE /songs/:id(.:format)                    songs#destroy
-      
+
 ## Objectives
 
 1. Implement nested resources for creation and modification
