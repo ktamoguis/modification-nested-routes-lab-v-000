@@ -27,7 +27,7 @@ class SongsController < ApplicationController
   def new
     binding.pry
     if params[:artist_id] && !Artist.exists?(params[:artist_id])
-      redirect_to authors_path #, alert: "Author not found."
+      redirect_to artists_path #, alert: "Author not found."
     else
       @post = Post.new(author_id: params[:author_id])
     end
