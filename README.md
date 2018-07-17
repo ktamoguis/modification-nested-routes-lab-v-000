@@ -1,10 +1,11 @@
 # Modifying Nested Resources Lab
 
-artist_songs GET    /artists/:artist_id/songs(.:format)     songs#index
-new_artist_song GET    /artists/:artist_id/songs/new(.:format) songs#new
-    artist_song GET    /artists/:artist_id/songs/:id(.:format) songs#show
-        artists GET    /artists(.:format)                      artists#index
-                POST   /artists(.:format)                      artists#create
+    artist_songs GET    /artists/:artist_id/songs(.:format)          songs#index
+new_artist_song GET    /artists/:artist_id/songs/new(.:format)      songs#new
+edit_artist_song GET    /artists/:artist_id/songs/:id/edit(.:format) songs#edit
+     artist_song GET    /artists/:artist_id/songs/:id(.:format)      songs#show
+         artists GET    /artists(.:format)                           artists#index
+                 POST   /artists(.:format)                           artists#create
      new_artist GET    /artists/new(.:format)                  artists#new
     edit_artist GET    /artists/:id/edit(.:format)             artists#edit
          artist GET    /artists/:id(.:format)                  artists#show
